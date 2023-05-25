@@ -4,8 +4,8 @@
 }
 body {
     display: grid;
-    grid-template-columns: 375px 1fr 1fr;
-    grid-template-rows: repeat(3, 265px);
+    grid-template-columns: 345px 1fr;
+    grid-template-rows: 265px 400px 250px;
     justify-content: center;
 }
 aside {
@@ -47,7 +47,8 @@ img {
 header {
     display: grid;
     grid-template-rows: 90px;
-    grid-column: 2 / span 4;
+    grid-template-columns: 1fr; 
+    grid-column-start: 2;
     grid-row-start: 1;
     justify-items: center;
     align-items: center;
@@ -78,6 +79,7 @@ button:active {
     display: flex;
     justify-items: center;
     align-items: center;
+    margin-right: 25px;
 }
 .notif-icon {
     width: 18px;
@@ -126,64 +128,28 @@ button:active {
     background-color: #F5F7FF;
 }
 .second-section {
-    width: 916px;
-    height: 390px;
-    background-color: white;
     display: grid;
-    grid-column: 2 / span 3;
+    grid-template-columns: 1fr;
+    grid-column-start: 2;
     grid-row: 2;
-    margin-top: 30px;
     justify-items: center;
     align-items: center;
+    margin-top: 25px;
+}
+.second-section-div {
+    background-color: white;
+    width: 900px;
+    height: 360px;
 }
 article {
-    width: 916px;
-    height: 217px;
-    background-color: rgb(255, 255, 255);
     display: grid;
     grid-column: 2 / span 3;
-    grid-row: 4;
-    margin-top: -90px;
+    grid-row: 3;
     justify-items: center;
     align-items: center;
 }
-@media (max-width: 1499px) {
-    .second-section {
-        margin-left: 80px;
-    }
-}
-@media (min-width: 1500px) {
-    .second-section {
-        margin-left: 240px;
-    }
-}
-@media (max-width: 1499px) {
-    input {
-        margin-left: 80px;
-    }
-}
-@media (min-width: 1500px) {
-    input{
-        margin-left: 350px;
-    }
-}
-@media (max-width: 1499px) {
-    button {
-        margin-left: 560px;
-    }
-}
-@media (min-width: 1500px) {
-    button{
-        margin-left: 820px;
-    }
-}
-@media (max-width: 1499px) {
-    article {
-        margin-left: 80px;
-    }
-}
-@media (min-width: 1500px) {
-    article {
-        margin-left: 240px;
-    }
+.article-div {
+    width: 900px;
+    height: 200px;
+    background-color: white;
 }
