@@ -18,6 +18,7 @@ aside {
     height: 924px;
     font-size: 22px;
     padding-left: 45px;
+    z-index: 2;
 }
 h1 {
     font-size: 36px;
@@ -32,7 +33,7 @@ h1 {
 .aside-group-bot {
     width: 94px;
     height: 29px;
-    margin-top: 480px;
+    margin-top: 570px;
 }
 .aside-align {
     display: grid;
@@ -96,7 +97,7 @@ button:active {
     width: 68px;
     height: 68px;
     border-radius: 34px;
-    background-color: antiquewhite;
+    background-color: #dae2ff;
     margin-left: 10px;
 }
 .first-section {
@@ -129,17 +130,70 @@ button:active {
 }
 .second-section {
     display: grid;
-    grid-template-columns: 1fr;
     grid-column-start: 2;
     grid-row: 2;
     justify-items: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: -20px;
 }
 .second-section-div {
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 200px 60px;
     width: 900px;
-    height: 360px;
+    height: 330px;
+}
+.top-div {
+    padding: 10px 20px;
+    display: flex;
+}
+.second-section-div > p {
+    margin-left: 15px;
+}
+.second-section-div-num {
+    font-size: 40px;
+    margin: 0;
+}
+.second-section-div-per {
+    color:  #50C029;
+    margin-left: 10px;
+}
+.second-section-div-p {
+    color: #767676;
+    height: 30px;
+    position: absolute;
+    margin-top: 50px;
+}
+.second-section-div-m {
+    color: #767676;
+    margin-left: 580px;
+}
+.icon-arrow-down {
+    width: 20px;
+    height: 55px;
+    margin-left: 8px;
+}
+.graph {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.graph > img {
+    position: absolute;
+    width: 780px;
+    height: 200px;
+}
+.bottom-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom-div > p {
+    font-size: 20px;
+    color: #767676;
+    height: 30px;
 }
 article {
     display: grid;
@@ -149,7 +203,41 @@ article {
     align-items: center;
 }
 .article-div {
-    width: 900px;
+    display: grid;
+    grid-template-columns: 200px 2fr;
+    grid-template-rows: 1fr 1fr;
+    width: 860px;
     height: 200px;
     background-color: white;
+    padding: 20px;
+}
+.div-article1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    align-self: center;
+}
+.div-article1 > img {
+    width: 150px;
+}
+.div-article2 {
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+.div-article3 > p,
+.div-article2 > p {
+    margin-right: 100px;
+}
+.div-article3 {
+    background-color: #DDDDDD;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+.fix-align {
+    margin-left: 20px;
 }
