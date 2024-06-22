@@ -2,45 +2,42 @@
     background-color: #EFEFEF;
     font-family: inter, roboto;
 }
+
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: grid;
     grid-template-columns: 345px 1fr;
-    grid-template-rows: 265px 400px 250px;
-    justify-content: center;
+    /* grid-template-rows: 265px 400px 250px; */
 }
+
 aside {
+    font-size: 20px;
+    padding: 20px;
     background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    height: 924px;
-    font-size: 22px;
-    padding-left: 45px;
-    z-index: 2;
-}
-h1 {
-    font-size: 36px;
-    font-weight: 400;
-    width: 186px;
-    height: 44px;
-}
-.aside-group-mid {
-    width: 67px;
-    height: 67px;
-}
-.aside-group-bot {
-    width: 94px;
-    height: 29px;
-    margin-top: 570px;
-}
-.aside-align {
     display: grid;
-    grid-template-columns: 1fr 90px;
-    margin-bottom: -25px;
-    align-items: center;
+    align-content: space-around;
 }
+.main-section,
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+.main-section > section,
+.footer-section > section {
+    display: flex;
+}
+.main-section > section > p,
+.footer-section > section > p {
+    margin: 10px;
+}
+.main-section > section > img,
+.footer-section > section > img {
+    width: 20px;
+}
+
+/*
 img {
     width: 23px;
     margin-right: 15px;
@@ -240,4 +237,4 @@ article {
 }
 .fix-align {
     margin-left: 20px;
-}
+} */
