@@ -10,8 +10,14 @@ The goal of this project is to practice the CSS grid and the composition of webs
 
 [Dashboard](https://haveadream1.github.io/dashboard/)
 
+### Credit
+
+[Profile Image](https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)
+[Icon]()
+
 ## Todo:
     Name review  
     Grid review  
     Styling review
-    Responsive review
+    Responsive review  
+    Icon credit
