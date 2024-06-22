@@ -9,7 +9,6 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 345px 1fr;
-    /* grid-template-rows: 265px 400px 250px; */
 }
 
 aside {
@@ -37,66 +36,62 @@ aside {
     width: 20px;
 }
 
-/*
-img {
-    width: 23px;
-    margin-right: 15px;
-}
-header {
+main {
+    padding: 20px;
     display: grid;
-    grid-template-rows: 90px;
-    grid-template-columns: 1fr; 
-    grid-column-start: 2;
-    grid-row-start: 1;
-    justify-items: center;
+    grid-template-rows: 90px 100px 300px 200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-input {
+
+.left-space {
+    width: 300px;
+    height: 90px;
+}
+
+.search-section {
+    display: flex;
+    align-items: flex-end;
+}
+.search-section > input {
     width: 400px;
     height: 25px;
     background-color: #D9D9D9;
     border: none;
     border-radius: 50px;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    margin-left: 150px;
 }
-button {
+.search-section > button {
     border: none;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    margin-left: 615px;
 }
-button:active {
-    opacity: 50%;
+.search-section > button:active {
+    opacity: 70%;
 }
-.pp-align {
-    grid-column: 2;
-    grid-row: 1;
-    margin-left: 50px;
+
+.profile-section {
+    width: 300px;
+    padding: 10px;
     display: flex;
-    justify-items: center;
+    justify-content: flex-end;
     align-items: center;
-    margin-right: 25px;
 }
-.notif-icon {
-    width: 18px;
-    height: 21.5px;
+.alert-icon {
+    margin-left: -10px;
+    margin-top: -20px;
 }
-.notif-alert-icon {
-    position: absolute;
-    margin-left: 7px;
-    margin-top: -16px;
-    width: 18px;
-    height: 21.5px;
-}
-.profil-picture {
+.profile-icon {
     width: 68px;
     height: 68px;
-    border-radius: 34px;
-    background-color: #dae2ff;
+    border-radius: 35px;
     margin-left: 10px;
+    background-color: #dae2ff;
+    object-fit: cover;
 }
+
+/*
 .first-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
