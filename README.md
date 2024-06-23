@@ -4,7 +4,7 @@ Dashboard presents an interface to track the task requests
 
 ## Goal
 
-The goal of this project is to practice the CSS grid and the composition of website
+The goal of this project is to practice the CSS grid and the composition of a website
 
 ## Preview
 
