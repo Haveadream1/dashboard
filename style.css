@@ -1,6 +1,9 @@
 :root {
     --blue: #344DF3;
     --dark-grey: #D9D9D9;
+    --light-grey: #767676;
+    --green: #50C029;
+    --backgroud: #EFEFEF;
     font-family: inter, roboto;
 }
 
@@ -8,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #EFEFEF;
+    background-color: var(--backgroud);
     display: grid;
     grid-template-columns: 345px 1fr;
 }
@@ -99,7 +102,6 @@ header {
     height: 68px;
     border-radius: 35px;
     margin-left: 10px;
-    background-color: #dae2ff;
     object-fit: cover;
 }
 
@@ -127,13 +129,13 @@ header {
 }
 .task-section > section:hover {
     outline: 2px solid var(--blue);
-    background-color: #F5F7FF;
+    background-color: white;
 }
 .task-section > section > p {
     margin: 0;
 }
 .task-section > section > p:nth-child(2){
-    color: #767676;
+    color: var(--light-grey);
 }
 
 .center-grid {
@@ -170,11 +172,11 @@ header {
     margin: 0;
 }
 .left-data > p:nth-child(2) {
-    color:  #50C029;
+    color:  var(--green);
 }
 
 .data > p {
-    color: #767676;
+    color: var(--light-grey);
     grid-column: 1;
     grid-row: 2;
     margin: 0;
