@@ -1,5 +1,4 @@
 :root {
-    background-color: #EFEFEF;
     font-family: inter, roboto;
 }
 
@@ -7,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: #EFEFEF;
     display: grid;
     grid-template-columns: 345px 1fr;
 }
@@ -16,7 +16,7 @@ aside {
     padding: 20px;
     background-color: white;
     display: grid;
-    align-content: space-around;
+    align-content: space-between;
 }
 aside > h1 {
     font-size: 36px;
@@ -41,9 +41,9 @@ aside > h1 {
 }
 
 main {
-    padding: 20px;
+    padding: 15px;
     display: grid;
-    grid-template-rows: 90px 200px 370px 200px;
+    grid-template-rows: 90px 200px 650px;
 }
 
 header {
@@ -128,12 +128,12 @@ header {
     color: #767676;
 }
 
-.graph-grid {
-    padding: 10px;
+.center-grid {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
 }
+
 .graph-section{
     padding: 10px;
     height: 335px;
@@ -200,110 +200,29 @@ header {
     align-items: center;
 }
 
-/* .second-section-div {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px 200px 60px;
-    width: 900px;
-    height: 330px;
-}
-.top-div {
-    padding: 10px 20px;
-    display: flex;
-}
-.second-section-div > p {
-    margin-left: 15px;
-}
-.second-section-div-num {
-    font-size: 40px;
-    margin: 0;
-}
-.second-section-div-per {
-    color:  #50C029;
-    margin-left: 10px;
-}
-.second-section-div-p {
-    color: #767676;
-    height: 30px;
-    position: absolute;
-    margin-top: 50px;
-}
-.second-section-div-m {
-    color: #767676;
-    margin-left: 580px;
-}
-.icon-arrow-down {
-    width: 20px;
-    height: 55px;
-    margin-left: 8px;
-}
-.graph {
-    z-index: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.graph > img {
-    position: absolute;
-    width: 780px;
-    height: 200px;
-}
-.bottom-div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.bottom-div > p {
-    font-size: 20px;
-    color: #767676;
-    height: 30px;
-} */
-
-/*
-article {
-    display: grid;
-    grid-column: 2 / span 3;
-    grid-row: 3;
-    justify-items: center;
-    align-items: center;
-}
-.article-div {
-    display: grid;
-    grid-template-columns: 200px 2fr;
-    grid-template-rows: 1fr 1fr;
+.repartition-section {
     width: 860px;
     height: 200px;
+    padding: 10px;
     background-color: white;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr;
 }
-.div-article1 {
-    grid-column: 1;
+.circle-graph {
     grid-row: 1 / span 2;
+    grid-column: 1;
     justify-self: center;
     align-self: center;
 }
-.div-article1 > img {
-    width: 150px;
-}
-.div-article2 {
-    background-color: #F4F4F4;
+.contributor {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 25px;
+    justify-content: space-around;
 }
-.div-article3 > p,
-.div-article2 > p {
-    margin-right: 100px;
+.contributor > img {
+    width: 20px
 }
-.div-article3 {
-    background-color: #DDDDDD;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 25px;
+.repartition-section > section:nth-child(3) {
+    background-color: #D9D9D9;
 }
-.fix-align {
-    margin-left: 20px;
-} */
