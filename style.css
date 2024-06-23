@@ -117,31 +117,16 @@ header {
     align-items: center;
     grid-row: 2;
 }
+.task-section > section:hover {
+    outline: 2px solid #344DF3;
+    background-color: #F5F7FF;
+}
 .task-section > section > p {
     margin: 0;
 }
 .task-section > section > p:nth-child(2){
     color: #767676;
 }
-/* .div-section {
-    background-color: white;
-    width: 198px;
-    height: 91px;
-    margin-left: 25px;
-    text-align: center;
-    transition: background-color 0.45s;
-}
-.div-title {
-    color: #767676;
-}
-.div-num {
-    margin-top: -5px;
-    font-size: 28px;
-}
-.div-section:hover {
-    border: 2px solid #344DF3;
-    background-color: #F5F7FF;
-} */
 /*
 .second-section {
     display: grid;
