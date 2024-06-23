@@ -16,8 +16,8 @@ The goal of this project is to practice the CSS grid and the composition of webs
 [Icon]()
 
 ## Todo:
-    Name review         DONE  
+    Name review         DONE   
     Grid review         DONE  
-    Styling review  
+    Styling review      DONE  
     Responsive review    
     Icon credit  
