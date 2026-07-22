@@ -18,10 +18,18 @@ The goal of this project is to practice the CSS grid and the composition of a we
 ## Todo:
 * Review layout (stay in the line of the project, here practice the grid layout and composition)
 * Perfecting the responsiveness with relative units and media queries
+* Start with mobile first
 * Create a proper README
 * Include HTML/CSS best practices
 * Reduce the CSS hierarchy
-* Refactor the design
+* Refer to the Figma design
 * Add ARIA accessibility
 * Add if have time small interactive elements
 * Run performance check
+* Rename properly the images
+* Review class names
+
+## Knonw issues
+* Improve images loading
+* Form elements wihtout any labels
+* Background and foreground colors without enough contrast ratio
