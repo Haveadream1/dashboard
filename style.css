@@ -31,6 +31,24 @@ body {
 /* ASIDE */
 aside {
     background-color: white;
+    
+    display: grid;
+    padding: var(--space-sm);
+}
+
+.nav-container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--space-xs);
+}
+.nav-icon {
+    width: 20px;
+    height: 20px;
+}
+.nav-text {
+    width: 78px;
 }
 
 /* MAIN */
