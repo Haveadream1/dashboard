@@ -1,13 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     font-family: inter, roboto;
 
+    /* Colors */
     --light-blue: #F7F9FC;
 
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     height: 100vh;
     background-color: var(--light-blue);
 
