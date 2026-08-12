@@ -11,6 +11,7 @@
 
     /* Colors */
     --light-blue: #F7F9FC;
+    --dark-blue: #3D55F3;
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -26,6 +27,8 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    /* grid-template-columns: 250px 1fr; */
 }
 
 /* ASIDE */
@@ -34,6 +37,12 @@ aside {
     
     display: grid;
     padding: var(--space-sm);
+    grid-row: 1 /span 2;
+}
+
+h1 {
+    align-content: center;
+    font-weight: lighter;
 }
 
 .nav-container {
@@ -51,11 +60,27 @@ aside {
     width: 78px;
 }
 
+.home {
+    color: var(--dark-blue);
+}
+
+.footer-side-bar {
+    align-content: center;
+}
+
 /* MAIN */
 main {
     /* remove after layout */
-    background-color: red;
+    background-color: rgb(0, 255, 68);
 }
+
+/* HEADER */
+header {
+    background-color: red;
+    /* height: 200px; */
+}
+
+
 
 /* :root {
     --blue: #344DF3;
