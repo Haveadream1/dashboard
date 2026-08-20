@@ -14,6 +14,7 @@
     --electric-blue: #3D55F3;
     --dark-blue: #22263F;
     --grey: #ECEEF1;
+    --green: #52C51F;
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -139,7 +140,8 @@ main {
     padding: var(--space-sm);
 
     display: grid;
-    grid-template-rows: 1fr repeat(3, 3fr);
+    /* grid-template-rows: 1fr repeat(3, 3fr); */
+    grid-template-rows: 1fr 2fr 3fr 2fr;
     gap: var(--space-md);
 }
 
@@ -174,10 +176,63 @@ h2 {
 }
 .number-metric {
     font-size: larger;
+    font-weight: bold;
 }
 
 .graph-container {
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;
+    padding: var(--space-sm);
+}
 
+.graph-information-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.data-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+#total-requests-num {
+    font-size: xx-large;
+    font-weight: bold;
+}
+#shifting-percentage {
+    color: var(--green);
+}
+#graph-title {
+    grid-row: 2;
+    color: var(--dark-blue);
+}
+
+.frequency-container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-xs);
+}
+
+.vector-container {
+    display: grid;
+    justify-items: center;
+    align-items: end;
+}
+/* #vector-1 {
+    position: absolute;
+} */
+
+.graph-legend-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .distribution-container {
