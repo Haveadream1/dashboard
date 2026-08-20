@@ -29,9 +29,8 @@ body {
 
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
-    /* grid-template-columns: 250px 1fr; */
 }
 
 /* ASIDE */
@@ -53,7 +52,7 @@ h1 {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: var(--space-xs);
 }
 .nav-icon {
@@ -137,12 +136,10 @@ main {
     /* remove after layout */
     background-color: var(--light-blue);
 
-    padding: var(--space-sm);
+    padding: 0 var(--space-sm) var(--space-sm);
 
     display: grid;
-    /* grid-template-rows: 1fr repeat(3, 3fr); */
-    grid-template-rows: 1fr 2fr 3fr 2fr;
-    gap: var(--space-md);
+    gap: var(--space-sm);
 }
 
 h2 {
@@ -219,15 +216,6 @@ h2 {
     gap: var(--space-xs);
 }
 
-.vector-container {
-    display: grid;
-    justify-items: center;
-    align-items: end;
-}
-/* #vector-1 {
-    position: absolute;
-} */
-
 .graph-legend-container {
     display: grid;
     grid-auto-flow: column;
@@ -241,7 +229,7 @@ h2 {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
     gap: var(--space-sm);
-    padding-left: var(--space-sm);
+    padding: var(--space-sm);
 }
 .circle-graph {
     grid-row: 1 / span 2;
@@ -267,6 +255,11 @@ h2 {
 .graph-container,
 .table-container {
     background-color: #FFFFFF;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
 }
 
 /* :root {
