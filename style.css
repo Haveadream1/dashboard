@@ -14,6 +14,7 @@
     --electric-blue: #3D55F3;
     --dark-blue: #22263F;
     --grey: #ECEEF1;
+    --dark-grey: #6C6E81;
     --green: #52C51F;
 
     /* Spacing */
@@ -89,22 +90,33 @@ header {
     grid-auto-flow: column;
     grid-template-columns: 1fr 4fr;
 
-    width: 300px;
+    height: 70%;
+    width: 320px;
     padding: var(--space-xs);
     border-radius: var(--space-xs);
+    align-content: center;
+}
+
+#search-button {
+    display: flex;
+    justify-content: center;
+}
+
+#search-input,
+#search-input::placeholder {
+    color: var(--dark-grey);
+}
+
+#search-input:focus {
+    outline: 0 none;
 }
 
 #search-button,
 #search-input {
+    height: 100%;
     border: none;
     padding: var(--space-xs);
-}
-
-
-/* remove AFTER */
-.icon {
-    width: 20px;
-    height: 20px;
+    background-color: var(--grey);
 }
 
 .profile-container {
