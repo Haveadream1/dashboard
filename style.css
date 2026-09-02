@@ -7,7 +7,7 @@
 }
 
 :root {
-    font-family: inter, roboto;
+    font-family: inter, roboto, sans-serif;
 
     /* Colors */
     --light-blue: #F7F9FC;
@@ -54,6 +54,10 @@ h1 {
     font-weight: lighter;
 }
 
+nav {
+    display: grid;
+}
+
 .nav-container {
     display: grid;
     grid-auto-flow: column;
@@ -75,7 +79,7 @@ h1 {
     color: var(--electric-blue);
 }
 
-.footer-side-bar {
+.footer-navigation {
     align-content: center;
 }
 
@@ -128,7 +132,6 @@ header {
 
 #search-input:focus {
     outline: 2px solid var(--electric-blue);
-    outline-offset: 2px;
 }
 
 #search-button,
@@ -143,6 +146,7 @@ header {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    position: relative;
     gap: var(--space-sm);
 }
 
@@ -154,8 +158,8 @@ header {
 .alert-icon {
     width: 10px;
     height: 10px;
-    margin-top: -20px;
-    margin-left: 10px;
+    top: 12px;
+    left: 10px;
     position: absolute;
 }
 
