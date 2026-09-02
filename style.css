@@ -108,13 +108,27 @@ header {
     justify-content: center;
 }
 
+/* We cannot use the display none for labels, instead this standard class  */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
 #search-input,
 #search-input::placeholder {
     color: var(--dark-grey);
 }
 
 #search-input:focus {
-    outline: 0 none;
+    outline: 2px solid var(--electric-blue);
+    outline-offset: 2px;
 }
 
 #search-button,
