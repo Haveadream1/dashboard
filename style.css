@@ -286,11 +286,11 @@ h2 {
     height: 20px;
 }
 
-.distribution-container > :nth-child(2) {
+#first-contributor {
     border-top-right-radius: var(--space-xs);
 }
 
-.distribution-container > :nth-child(3) {
+#second-contributor {
     background-color: var(--grey);
     border-bottom-right-radius: var(--space-xs);
 }
