@@ -53,9 +53,12 @@
 
     <header>
         <div class="search-container">
-            <button id="search-button">
+            <button id="search-button" aria-label="Search button">
                 <img src="assets/search-icon.svg" alt="Search button" width="24px" height="24px">
             </button>
+
+            <!-- Label is needed for accessibility with screen readers but we visually hide it -->
+            <label for="search-input" class="sr-only">Search</label>
             <input id="search-input" type="text" name="input" placeholder="Search...">
         </div>
         
