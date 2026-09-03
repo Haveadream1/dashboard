@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dashboard to practice website layout">
 
@@ -13,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <title>Dashboard</title>
+    <title>Dashboard UI</title>
 </head>
 
 <body>
@@ -79,22 +78,25 @@
     <main>
         <h2>Tasks</h2>
 
-        <div class="metrics-container">
+        <!-- Description list more semantic for key/values -->
+        <dl>
             <div class="metric-item">
-                <p class="text-metric">New</p>
-                <p class="number-metric">80</p>
+                <!-- Description terms -->
+                <dt>New</dt>
+                <!-- Description details -->
+                <dd>80</dd>
             </div>
 
             <div class="metric-item">
-                <p class="text-metric">Late</p>
-                <p class="number-metric">120</p>
+                <dt>Late</dt>
+                <dd>120</dd>
             </div>
 
             <div class="metric-item">
-                <p class="text-metric">Resolved</p>
-                <p class="number-metric">75</p>
+                <dt>Resolved</dt>
+                <dd>75</dd>
             </div>
-        </div>
+        </dl>
 
         <div class="graph-container">
             <div class="graph-information-container">
