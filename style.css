@@ -265,9 +265,15 @@ dd {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr;
-    gap: var(--space-sm);
+    grid-template-rows: 1fr;
+    column-gap: var(--space-sm);
     padding: var(--space-sm);
+}
+
+.contributor-ordered-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: var(--space-sm);
 }
 
 .circle-graph {
