@@ -64,6 +64,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     padding: var(--space-xs);
+    grid-template-columns: 1fr 2fr;
 }
 
 .nav-icon {
@@ -71,8 +72,8 @@ nav {
     height: 20px;
 }
 
-.nav-text {
-    width: 78px;
+.nav-text:hover {
+    text-decoration: underline var(--electric-blue);   
 }
 
 .home {
@@ -86,7 +87,7 @@ nav {
 /* HEADER */
 header {
     padding: var(--space-sm);
-    
+    gap: var(--space-sm);
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
@@ -101,7 +102,7 @@ header {
     grid-template-columns: 1fr 6fr;
 
     height: 70%;
-    width: 320px;
+    max-width: 320px;
     padding: var(--space-xs);
     border-radius: var(--space-xs);
     align-content: center;
@@ -137,6 +138,7 @@ header {
 #search-button,
 #search-input {
     height: 100%;
+    width: 100%;
     border: 0 none;
     padding: var(--space-xs);
     background-color: var(--grey);
@@ -198,7 +200,6 @@ dl {
 
     display: grid;
     gap: var(--space-xs);
-    border-radius: var(--space-xs);
 }
 
 dt {
@@ -240,9 +241,11 @@ dd {
     color: var(--green);
 }
 
-#graph-title {
+#graph-heading {
     grid-row: 2;
     color: var(--dark-blue);
+    font-size: medium;
+    font-weight: normal;
 }
 
 .frequency-container {
@@ -320,4 +323,79 @@ dd {
 .distribution-container {
     border-radius: var(--space-xs);
     border: 1px solid var(--grey);
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: var(--space-xs);
+        border-top: 1px solid var(--grey);
+        border-right: 0 none;
+        background-color: var(--light-blue);
+    }
+
+    /* Same as sr-only but cannot add class with css */
+    h1 {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    nav {
+        grid-auto-flow: column;
+        justify-content: center;
+    }
+
+    .main-navigation,
+    .footer-navigation {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .nav-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    dl,
+    .contributor-container {
+        gap: var(--space-xs);
+    }
+
+    .metric-item {
+        min-width: 105px;
+    }
+
+    .distribution-container {
+        padding: var(--space-sm);
+        row-gap: var(--space-sm);
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .circle-graph {
+        max-width: 128px;
+        max-height: 128px;
+    }
+
+    /* Use to avoid overlapping the distribution container */
+    main {
+        padding-bottom: 80px;
+    }
 }
