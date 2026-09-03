@@ -98,14 +98,14 @@
             </div>
         </dl>
 
-        <div class="graph-container">
+        <section class="graph-container" aria-labelledby="graph-heading">
             <div class="graph-information-container">
                 <div class="data-container">
                     <p id="total-requests-num">1,500</p>
                     <p id="shifting-percentage">+20.65%</p>
                 </div>
                 
-                <p id="graph-title">Overall request treated</p>
+                <h3 id="graph-heading">Overall request treated</h3>
 
                 <div class="frequency-container">
                     <p>Monthly</p>
@@ -123,10 +123,12 @@
                 <p>Sept.</p>
                 <p>Nov.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="distribution-container">
+        <section class="distribution-container" aria-labelledby="distribution-heading">
             <img class="circle-graph image" src="assets/distribution-graphic.svg" width="128" height="128" alt="Graph that represents the distribution of tasks">
+
+            <h3 id="distribution-heading" class="sr-only">Top contributors</h3>
 
             <ol class="contributor-ordered-list">
                 <li id="first-contributor" class="contributor-container">
@@ -143,7 +145,7 @@
                     <img class="arrow-icon" src="assets/arrow-icon.svg" width="20" height="20" alt="Arrow icon">
                 </li>
             </ol>
-        </div>  
+        </section>  
     </main>
 </body>
 </html>
