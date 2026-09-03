@@ -182,7 +182,7 @@ h2 {
     font-weight: lighter;
 }
 
-.metrics-container {
+dl {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
@@ -201,12 +201,12 @@ h2 {
     border-radius: var(--space-xs);
 }
 
-.text-metric {
+dt {
     font-size: small;
     color: var(--dark-blue);
 }
 
-.number-metric {
+dd {
     font-size: larger;
     font-weight: bold;
 }
