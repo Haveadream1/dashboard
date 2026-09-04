@@ -7,7 +7,7 @@
 }
 
 :root {
-    font-family: inter, roboto, sans-serif;
+    font-family: 'Inter', 'Roboto', sans-serif;
 
     /* Colors */
     --light-blue: #F7F9FC;
@@ -113,7 +113,7 @@ header {
     justify-content: center;
 }
 
-/* We cannot use the display none for labels, instead this standard class  */
+/* We cannot use the display none for labels, instead screen-readers only visible  */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -155,6 +155,24 @@ header {
 .notif-icon {
     width: 20px;
     height: 20px;
+}
+
+.notif-icon:hover {
+    animation-name: bell-ring;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes bell-ring {
+    0% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .alert-icon {
@@ -200,6 +218,14 @@ dl {
 
     display: grid;
     gap: var(--space-xs);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-item:hover {
+    transform: translateY(-2px);
+    /* OffsetX OffsetY Radius */
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
 }
 
 dt {
@@ -371,6 +397,14 @@ dd {
 
     .nav-text {
         display: none;
+    }
+
+    .nav-icon {
+        transition: transform 0.15s ease;
+    }
+
+    .nav-icon:hover {
+        transform: translateY(-2px);
     }
 
     dl,
