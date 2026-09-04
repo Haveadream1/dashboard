@@ -15,7 +15,7 @@
     --dark-blue: #22263F;
     --grey: #ECEEF1;
     --dark-grey: #6C6E81;
-    --green: #52C51F;
+    --green: #388615;
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -260,8 +260,9 @@ dd {
     gap: var(--space-xs);
 }
 
+/* To avoid the WAVE alert of el not being an heading despite size */
 #total-requests-num {
-    font-size: xx-large;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
