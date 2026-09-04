@@ -175,12 +175,14 @@ header {
     }
 }
 
-.alert-icon {
+.red-dot {
     width: 10px;
     height: 10px;
     top: 12px;
     left: 10px;
     position: absolute;
+    background-color: red;
+    border-radius: 100%;
 }
 
 .profile-icon {
