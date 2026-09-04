@@ -5,6 +5,7 @@ Dashboard presents an interface to track task requests.
 ## Goal
 
 The goal of this project is to practice the CSS grid and the composition of a website.
+Practice desktop-first
 
 ## Preview
 
@@ -25,14 +26,7 @@ specify image width and height for better performance
 * Perfecting the responsiveness with relative units and media queries
 * Start with mobile first
 * Create a proper README
-* Include HTML/CSS best practices
-* Reduce the CSS hierarchy
-* Refer to the Figma design
-* Add ARIA accessibility
-* Add if have time small interactive elements
 * Run performance check
-
-Class should be shared between elements for styles, if not should I use an id ?
 
 ## Known issues
 * Improve images loading
