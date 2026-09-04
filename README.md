@@ -1,34 +1,20 @@
 # Dashboard
+Modern and responsive dashboard built with the use of semantic HTML and CSS grid
 
-Dashboard presents an interface to track task requests. 
+## Key features :pushpin:
+* CSS Grid layout
+* Accessibility components
+* Performance optimization
+* Smooth transitions on hover states
+* Desktop-first responsive design
 
-## Goal
-
-The goal of this project is to practice the CSS grid and the composition of a website.
-Practice desktop-first
-
-## Preview
-
+## Live preview :rocket:
 [Dashboard](https://haveadream1.github.io/dashboard/)
 
-## Credit
-
+## Credit :link:
 [Profile Image](https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)    
-[Free icons](https://www.figma.com/design/R2uuGTAjvoJnjHJ1y8CP1p/Free-Universal-Icons-(Community)?t=f6Jus0aRotVQVEai-0)
+[Free icons](https://www.figma.com/design/R2uuGTAjvoJnjHJ1y8CP1p/Free-Universal-Icons-(Community)?t=f6Jus0aRotVQVEai-0)    
 [Community icons](https://www.figma.com/design/J6UWMiQxQi8wR7xyAG8Lub/Material-Design-Icons--Community-?node-id=3-7&t=uJ5BeeHxBbL0UlZ3-1)
 
-Design files !!
-Design and asset used
-
-specify image width and height for better performance
-
-## Todo:
+## Todo: :construction:
 * Perfecting the responsiveness with relative units and media queries
-* Start with mobile first
-* Create a proper README
-* Run performance check
-
-## Known issues
-* Improve images loading
-* Form elements wihtout any labels
-* Background and foreground colors without enough contrast ratio
