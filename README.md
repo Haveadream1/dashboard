@@ -36,5 +36,5 @@ The following tools were used to measure it :
 [Bagdes](https://shields.io/)  
 
 ## Todo: :construction:
-* Change the color of navigation logo on hover
-* Check the font size in the aside (maybe a bit bigger)
+* Implement support for 'Dark Mode'
+* Refactor component responsiveness with modern 'CSS Container Queries'
