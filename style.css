@@ -355,6 +355,7 @@ dd {
     border: 1px solid var(--grey);
 }
 
+/* Mobile-first is the industry standard but this project helps me practice something different with desktop-first */
 @media (max-width: 600px) {
     body {
         grid-template-columns: 1fr;
