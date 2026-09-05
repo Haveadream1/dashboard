@@ -15,6 +15,7 @@
     --dark-blue: #22263F;
     --grey: #ECEEF1;
     --dark-grey: #6C6E81;
+    --input-grey: #4c4e5b;;
     --green: #388615;
 
     /* Spacing */
@@ -128,7 +129,7 @@ header {
 
 #search-input,
 #search-input::placeholder {
-    color: var(--dark-grey);
+    color: var(--input-grey);
 }
 
 #search-input:focus {
